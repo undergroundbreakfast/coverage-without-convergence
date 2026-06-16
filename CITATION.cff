@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Coverage without convergence: Geographic inequality in proximity to AI-reporting hospitals in the United States, 2022-2024"
+authors:
+  - family-names: Johnson
+    given-names: Aaron
+  - family-names: Gefen
+    given-names: David
+  - family-names: Harrison
+    given-names: Teresa
+repository-code: "https://github.com/undergroundbreakfast/coverage-without-convergence"
+version: "v137-submission"
+date-released: "2026-06-15"
+license: MIT

@@ -1,0 +1,8 @@
+metric,year_2022,year_2024,notes
+Block groups (n),236879,236879,Contiguous-U.S. block-group frame
+Survey AI-reporting hospitals (n),1119,1743,Full AHA survey AI-reporting totals
+Population within 30 min (millions),220.7,250.6,Contiguous-U.S. population
+Population within 30 min (%),67.0,76.1,Contiguous-U.S. coverage
+Mean proxy drive time (min),36.4,25.1,Population-weighted
+Median proxy drive time (min),15.3,11.3,Population-weighted
+P90 proxy drive time (min),94.8,62.9,Population-weighted

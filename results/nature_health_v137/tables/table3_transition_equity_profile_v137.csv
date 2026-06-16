@@ -1,0 +1,14 @@
+characteristic,persistently_within_30_min,newly_within_30_min,improved_still_outside,outside_no_improvement,units_or_notes
+Block groups,142937,33259,24745,26631,count
+Population,206.8,45.1,30.7,34.0,millions
+Metro (RUCC 1-3),97.0,79.4,52.6,60.3,population-weighted percent
+Nonmetro more urban (RUCC 4-6),2.3,14.7,26.5,22.7,population-weighted percent
+Nonmetro less urban (RUCC 7-9),0.6,6.0,20.9,16.9,population-weighted percent
+Median household income,84046,70656,65018,66741,USD
+Poverty rate,12.7,14.1,15.8,15.2,percent
+Uninsured rate,9.7,10.8,11.1,11.4,percent
+Population aged 65+,14.5,16.8,18.1,17.9,percent
+Baseline county YPLL per 100k,6375,7456,8219,8368,2019; descriptive context
+Median proxy drive time 2024,7.6,12.3,50.7,59.1,minutes
+Proxy drive time 2024 IQR lower,4.1,6.0,38.1,41.4,minutes
+Proxy drive time 2024 IQR upper,12.7,20.3,76.0,98.7,minutes

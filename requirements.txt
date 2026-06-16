@@ -1,0 +1,17 @@
+pandas
+numpy
+geopandas
+shapely
+sqlalchemy
+psycopg2-binary
+tqdm
+scikit-learn
+scipy
+statsmodels
+matplotlib
+seaborn
+contextily
+esda
+libpysal
+splot
+cartopy

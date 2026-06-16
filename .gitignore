@@ -1,0 +1,53 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local credentials and environment
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Local databases and dumps
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.sql
+*.bak
+
+# Licensed/raw data that must not be committed
+raw_data/
+data/raw/
+data/licensed/
+aha_survey_data/
+aha_fy2024/
+*AHA*
+*aha*
+*HealthForum*
+*.parquet
+*.feather
+*.dta
+*.sav
+
+# Local geospatial caches and bulky generated working folders
+tile_cache/
+shapefiles/
+publication_outputs/
+genai_robotics_health_output/
+
+# Notebooks and OS/editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+

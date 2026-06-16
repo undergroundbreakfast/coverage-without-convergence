@@ -1,0 +1,7 @@
+metric,year_2022,year_2024,change,notes
+Survey AI-reporting hospitals (n),1119,1743,+624,Full AHA survey AI-reporting totals
+AI-reporting hospitals (%),18.3,28.6,+10.3 pp,Full AHA survey denominator
+AI population covered (%),66.9,76.0,+9.1 pp,50 states plus D.C. frame
+AI proximity Gini,0.622,0.614,-0.008,Population-weighted access-distance Gini
+AI P90-P10 distance gap (mi),47.4,31.2,-16.2,Population-weighted distance gap
+All-hospital access Gini,0.496,0.496,approximately 0,Baseline hospital geography
