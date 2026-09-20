@@ -1,6 +1,6 @@
 # Nature Health v137 derived outputs
 
-This directory contains releasable derived outputs for the Nature Health v137 submission:
+This directory archives derived outputs for the original Nature Health v137 submission:
 
 **Coverage without convergence: Geographic inequality in proximity to AI-reporting hospitals in the United States, 2022-2024**
 
@@ -19,5 +19,8 @@ These files are derived from licensed AHA hospital data linked to public Census 
 - `tables/table2_blockgroup_summary_v137.csv`: main-text Table 2.
 - `tables/table3_transition_equity_profile_v137.csv`: main-text Table 3.
 
-All table values are aggregated manuscript outputs and do not disclose restricted hospital-level AHA records.
-
+The tables contain aggregate manuscript outputs, not hospital-level rows. This is
+not a determination of redistribution rights. The figures retain historical
+presentation defects described in ../../docs/output_map_v143.md. Current revision
+figures and summaries remain local pending redistribution-rights confirmation;
+they are not included in this code-only update.

@@ -1,17 +1,2 @@
-pandas
-numpy
-geopandas
-shapely
-sqlalchemy
-psycopg2-binary
-tqdm
-scikit-learn
-scipy
-statsmodels
-matplotlib
-seaborn
-contextily
-esda
-libpysal
-splot
-cartopy
+# Generic helpers and data-free unit tests; tested with Python 3.14.
+numpy==2.4.2

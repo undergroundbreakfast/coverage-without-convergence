@@ -2,6 +2,9 @@
 
 Audit date: 2026-06-15
 
+Historical audit, clarified September 20, 2026. This is not a certification of
+revision reproducibility or AHA-derived-data redistribution rights.
+
 Repository: `undergroundbreakfast/coverage-without-convergence`
 
 ## Summary
@@ -11,14 +14,14 @@ The public repository is suitable as a bounded reproducibility repository if the
 ## Checks performed
 
 - Confirmed no raw AHA hospital-level CSV, Excel, Parquet, SQLite, or database dump files are visible in the prepared tree.
-- Confirmed code obtains database credentials from environment variables rather than hard-coded password strings.
+- No hard-coded credentials were found. Correction: the published utility does not connect to a database or read environment credentials; the prior statement about environment-based credential loading did not describe this dedicated repository's code.
 - Confirmed the repository includes only the dedicated Nature Health v137 code, documentation, figure assets, and aggregated tables.
 - Added a Nature Health v137 landing description and reproducibility note.
 - Added `.gitignore` patterns for raw data, database dumps, environment files, and local geospatial caches.
 
 ## Residual limitations
 
-- Full end-to-end reproduction requires licensed AHA files and local database configuration.
+- The original release lacks the full extraction and analysis pipeline. Licensed AHA inputs and database configuration alone do not make it end-to-end reproducible.
 - The Nature Health submission should cite a release tag, not only the moving `main` branch.
 
 ## Recommended citation language

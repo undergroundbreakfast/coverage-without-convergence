@@ -1,58 +1,91 @@
-# Coverage without convergence
+# More hospitals report artificial intelligence use but geographic divides persist
 
-Dedicated reproducibility repository for the Nature Health submission:
+Analysis code for the Communications Health revision, v143.
 
-**Coverage without convergence: Geographic inequality in proximity to AI-reporting hospitals in the United States, 2022-2024**
+**v143-code: revision scripts, tests and documentation.** New revision tables and
+finished figures are withheld pending redistribution-rights confirmation. The
+`v137-submission` release remains the historical original submission; its assets
+are retained unchanged. Neither this update nor the software license certifies
+rights to redistribute AHA-derived outputs.
 
-This repository contains the public, releasable materials for the manuscript's proximity and access analyses. It is intentionally narrow: it does not include companion-project outputs on robotics, causal mortality analyses, propensity/TMLE models, dissertation artifacts, or old exploratory logs.
+## Study scope
 
-## What this repository supports
+The study measures population proximity to hospitals reporting artificial
+intelligence use in the 2022 and 2024 American Hospital Association surveys.
+Geographic gaps persist while metropolitan-nonmetropolitan gaps narrow. Coverage
+growth depends on the expanded 2024 instrument; reported implementation depth and
+missing-status assumptions are examined separately. Premature mortality is
+pre-existing health-burden context, not evidence of an AI effect on mortality.
 
-The manuscript links 2022 and 2024 American Hospital Association (AHA) AI-use measures to U.S. Census block groups and county health data to estimate population proximity to hospitals reporting active AI deployment. The analysis focuses on:
+Proximity is not verified service availability, clinical effectiveness, or patient
+exposure. Survey constructs are not fully equivalent across waves.
 
-- population coverage within policy-relevant travel-time thresholds;
-- access-distance inequality using Lorenz/Gini and related distributional summaries;
-- threshold-crossing and persistent-exclusion transition groups;
-- pre-diffusion health-burden overlap using Years of Potential Life Lost (YPLL) as descriptive context.
+## Start here
 
-The manuscript does **not** estimate causal effects of AI deployment on mortality.
+- [Reproduction guide](docs/reproduction_v143.md): inputs, execution order and limits.
+- [Output guide](docs/output_map_v143.md): manuscript figures, tables and source summaries.
+- [Version history](CHANGELOG.md): original release versus this code update.
+- [Data and licensing boundaries](docs/data_and_licensing.md).
+- [Publication status](docs/release_checklist.md): scope and remaining rights gates.
 
-## Repository structure
+## What can be run without licensed inputs?
 
-- `code/`: geospatial proximity and inequality workflow.
-- `docs/`: reproducibility notes and submission audit.
-- `results/nature_health_v137/figures/`: main and supplementary figure assets for v137.
-- `results/nature_health_v137/tables/`: aggregated manuscript tables for v137.
-- `requirements.txt`: lightweight Python dependency list.
-- `LICENSE`: MIT license for code and documentation in this repository.
+The generic calculation tests and package-integrity checks require no AHA data:
 
-## Data availability limits
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python scripts/validate_release.py
+python code/geospatial_access_workflow_v137.py
+```
 
-Raw AHA Annual Survey hospital-level files are licensed and cannot be redistributed here. The repository therefore provides a partial reproducibility package: code, documentation, figures, and aggregated derived outputs that do not disclose restricted hospital-level AHA records.
+The last command checks archived file presence and CSV schemas only. It does not
+regenerate or numerically validate the paper. The legacy midpoint-quantile helper
+is not used in the revision's production quantiles.
 
-Running the full pipeline from raw inputs requires:
+## Revision code
 
-- licensed AHA Annual Survey files for 2022 and 2024;
-- a geocoded AHA hospital frame;
-- U.S. Census 2020 block-group population data;
-- County Health Rankings county-level covariates and YPLL measures;
-- local database credentials and path configuration.
+`code/revision_v143/` contains the actual analysis-stage scripts, including the
+reporting models, fixed-reporting panel, per-application analyses, income-aware
+spatial scenarios, and implementation-depth maps. A separate pinned environment
+and a no-data import check are documented in the reproduction guide.
 
-Database credentials are expected through environment variables, especially `POSTGRESQL_KEY`; credentials and raw data should never be committed.
+These scripts require authorized frozen extracts and contextual inputs. They are
+not a turnkey extraction pipeline from independently obtained AHA files. The
+original release does not contain that extraction pipeline either. Source-data
+licensing alone does not provide the missing extraction work or map provenance.
 
-## Main output mapping
+## Files and version boundaries
 
-- Figure 1: `results/nature_health_v137/figures/2022_vs_2024_diffusion_v137.png`
-- Figure 2: `results/nature_health_v137/figures/manuscript_travel_distribution_ai_rucc.png`
-- Figure 3: `results/nature_health_v137/figures/2022_2024_delta_map_v137.png`
-- Supplementary figure: `results/nature_health_v137/figures/appendix_ai_flag_mode_sensitivity_2024_v137.png`
-- Main tables: `results/nature_health_v137/tables/`
+- `results/nature_health_v137/`: archived original-submission assets.
+- New revision figures and aggregate summaries are not included in this code update.
+- `code/geospatial_access_workflow_v137.py`: legacy method helpers, with tested
+  input-validation fixes in this update; the original tag remains unchanged.
+- `code/revision_v143/`: revision analysis and plotting scripts.
+- `release_manifest.json`: explicit file inventory and checksums.
+- `CITATION.cff`: citation metadata for the code snapshot; no DOI is claimed.
 
-See `docs/nature_health_v137_reproducibility_note.md` for the detailed reproducibility boundary and manuscript-output mapping.
+The revised Figure 2 is a rurality/income comparison, not the original Figure 2
+travel-time distribution. Use the output guide rather than assuming numbering is
+stable across versions. Corrected maps have been prepared locally but are not
+included in this code update. Historical image defects are documented rather than
+silently rewriting the tag.
 
-## Suggested manuscript citation
+## Data availability
 
-Reproducibility scripts, documentation, figures, and aggregated derived outputs not restricted by the AHA license are available at:
+The authors do not distribute licensed AHA records covered by their agreement.
+Source-data access must be arranged with AHA. No raw hospital records, individual
+hospital predictions, fine-grained derived map-value files, credentials, reviewer
+responses, or correspondence are included here. New aggregate summaries and
+finished figures remain local pending redistribution/provenance review; absence
+of identifiers is not evidence of permission.
 
-`https://github.com/undergroundbreakfast/coverage-without-convergence/tree/v137-submission`
+The MIT license covers author-owned software and documentation only. It does not
+grant rights to AHA data, third-party geography, or other third-party materials.
 
+## Existing public archive
+
+The [v137-submission release](https://github.com/undergroundbreakfast/coverage-without-convergence/releases/tag/v137-submission)
+is retained as historical. Do not cite it as containing the v143 analyses.
+Use the [v143-code snapshot](https://github.com/undergroundbreakfast/coverage-without-convergence/tree/v143-code)
+for this revision code, with the input and reproduction limits described above.

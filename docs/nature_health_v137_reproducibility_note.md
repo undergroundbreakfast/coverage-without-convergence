@@ -14,7 +14,7 @@ The analysis requires:
 
 ## Reproducibility boundary
 
-The repository can document and reproduce the analysis logic, generated outputs, and derived nonrestricted tables and figures. It cannot reproduce the full pipeline from raw inputs unless the user has licensed AHA files and updates local database credentials and path configuration.
+The original release archives figures and aggregate tables and provides generic calculation helpers. It does not supply the extraction or analysis pipeline that generated those outputs. Its executable script checks file presence and CSV schemas, not numerical reproducibility. Obtaining licensed AHA data and configuring a database would not by itself fill those code and input-specification gaps. The v143-code snapshot adds separate analysis-stage scripts; see reproduction_v143.md for their actual scope and remaining dependencies.
 
 The manuscript Data Availability statement should therefore use bounded language such as "reproducibility scripts, analysis outputs, and aggregated derived tables not restricted by the AHA license" rather than claiming that all source data or all analytic files are public.
 
@@ -37,13 +37,10 @@ Main-text outputs in v137 are assembled from the geospatial workflow and final m
 
 The Nature Health manuscript estimates proximity to AI-reporting hospitals. It does not verify access to a specific AI service, does not measure AI-specific capacity, and does not estimate causal effects of AI deployment on mortality. YPLL is used only as pre-diffusion health-burden context.
 
-## Release hygiene before submission
+## Historical status
 
-Before submitting the manuscript, freeze the public repository state with a release tag:
-
-```bash
-git tag -a v137-submission -m "Nature Health v137 submission reproducibility package"
-git push origin main --tags
-```
-
-If the final submitted manuscript changes after v137, create a new release tag matching the submitted version.
+The v137-submission tag already exists and must not be moved. The original figures
+include documented legend/occlusion defects; corrected revision figures have
+separate filenames and remain local pending rights confirmation. This note is
+clarified in the v143-code update without changing the tagged files. Publishing
+new derived outputs requires rights review; the original tag is not a revision-code citation.

@@ -51,3 +51,26 @@ genai_robotics_health_output/
 .vscode/
 .idea/
 
+# Revision runtime inputs and outputs are never included by directory-wide copy.
+**/private/
+**/analysis/
+**/Source_Data/
+**/inputs/
+**/run_geo_multi_*/
+**/pr_inclusion_sensitivity_*/
+**/Revisions/*/figures/
+*.npz
+*.npy
+*.geojson
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.docx
+*.eml
+*.msg
+*.log
+*.csv
+!results/nature_health_v137/tables/*.csv
+!results/revision_v143/tables/**/*.csv

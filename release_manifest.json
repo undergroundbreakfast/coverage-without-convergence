@@ -1,0 +1,241 @@
+{
+  "status": "v143-code snapshot; new revision-derived outputs withheld",
+  "version": "v143-code",
+  "historical_commit": "f82720314a3630304e121e097820d60497ccd675",
+  "code_publication_authorized": true,
+  "new_derived_outputs_included": false,
+  "rights_review_complete": false,
+  "fine_grained_records_included": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 997,
+      "sha256": "31e9a52dfee59022682f7774378afd6972eddc78c72c9b02dc2f8f283f53dc1f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1447,
+      "sha256": "53688090a539a1b4cf4e9cca1d649f482c5185c263c7e01af45326dcecc682f8"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 572,
+      "sha256": "5e09bb71ad114ac09dfc19a3092266fdc687748e2587433f5f0bb0e84d1a2e64"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1077,
+      "sha256": "cef948371090df24afdaf63e7ac1ce322c62790f861e70e39cc62bdb176af579"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4693,
+      "sha256": "66731ae9275ce9cc5994bd652a7dc3ab3cfdfb97079481ee372a8682865d180a"
+    },
+    {
+      "path": "code/README.md",
+      "bytes": 652,
+      "sha256": "e8ad6b1cef5f4711b23d309e59949f3e1d944f03286243c64eef33f2b15c8975"
+    },
+    {
+      "path": "code/geospatial_access_workflow_v137.py",
+      "bytes": 9244,
+      "sha256": "10a65546e9a52310f5bab28a28fac04421007499288ef7779f1e209ecc19e1af"
+    },
+    {
+      "path": "code/revision_v143/Revisions/adoption_stage_audit_20260920/audit.py",
+      "bytes": 6040,
+      "sha256": "b9cbb39d395c7ba4335534b9024fedff4af43f8811eea09070d6ed6d7b832e74"
+    },
+    {
+      "path": "code/revision_v143/Revisions/adoption_stage_audit_20260920/maturity_map.py",
+      "bytes": 10454,
+      "sha256": "c2e0e9d97ab093a5c7798cd4041432d22de5e6d9f6da6807b1fef3ebedd4281f"
+    },
+    {
+      "path": "code/revision_v143/Revisions/adoption_stage_audit_20260920/paired_maps.py",
+      "bytes": 3567,
+      "sha256": "265d3c5bdc911635f79182956456e9d2117d9c5d86a511fcf7c2b53579da11bb"
+    },
+    {
+      "path": "code/revision_v143/Revisions/adoption_stage_audit_20260920/publication_figures.py",
+      "bytes": 1704,
+      "sha256": "667bb99bc1a3420655174c01efa0b086c2ed47c745dd57e4cab5605671610f57"
+    },
+    {
+      "path": "code/revision_v143/Revisions/income_spatial_sensitivity_20260919/analyze.py",
+      "bytes": 24173,
+      "sha256": "739768684153c838540ef67c78c6e3e65e3c0c655e2f32b89e718fdfecf17735"
+    },
+    {
+      "path": "code/revision_v143/Revisions/income_spatial_sensitivity_20260919/figures.py",
+      "bytes": 10002,
+      "sha256": "c727f864d2c5278549cada23d1d77632cc045f7b25251227d96bfe9fbc6fa5be"
+    },
+    {
+      "path": "code/revision_v143/Revisions/income_spatial_sensitivity_20260919/income_access_map.py",
+      "bytes": 6505,
+      "sha256": "5feaf02a8191e0aab5129989d63fa2cb09cab002f7bf9bcbbbf5de8fa05ff26a"
+    },
+    {
+      "path": "code/revision_v143/Revisions/income_spatial_sensitivity_20260919/summarize.py",
+      "bytes": 2473,
+      "sha256": "5f071c4edb1cd429cfec6070febf00c83c1a87272bf08c19c4c67a6a877ff771"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v138_revision/analyze_context.py",
+      "bytes": 8707,
+      "sha256": "c4f45e7cb087a5519dc4dd64726a9e5fa94bcb39edd5c8f38e484cd097b541d4"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v138_revision/analyze_revision.py",
+      "bytes": 8492,
+      "sha256": "af471502a14f13bd8027fce28d003d171d75ed89cf2aeb4dabe45a584a8590c6"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v138_revision/analyze_uncertainty.py",
+      "bytes": 4205,
+      "sha256": "7ee43689b83a2c0a7680aefe0aad8479836c20a21115c542735839e7ba5eed5d"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v138_revision/build_maps.py",
+      "bytes": 5247,
+      "sha256": "08e82aae12450809d41e978253fc17c349355ced892a8b9f4a1b631def0c6be2"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v138_revision/build_revision_exhibits.py",
+      "bytes": 4480,
+      "sha256": "78e90fc1cf221ebbada97db1b5a5fbec299f7b5db529b50634d6315f875c1f0f"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v139_revision/analyze_reporting.py",
+      "bytes": 9543,
+      "sha256": "02f5da461ef3eaf71903ad51951368ec2cca936bd0cbc61e6a37306ca912ffd5"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v142_revision/build_additional_tables.py",
+      "bytes": 7466,
+      "sha256": "7d3bf183472be60daf215c7a1ecb4e2e85606e38c416c7d1e8ea7a2906325c7b"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v142_revision/extend_evidence.py",
+      "bytes": 9167,
+      "sha256": "36c10eb083bac92c381b7efc8142f85a73a5f67cf13b17a3af2024a8ea19e9d0"
+    },
+    {
+      "path": "code/revision_v143/Revisions/v142_revision/refresh_figure1.py",
+      "bytes": 2254,
+      "sha256": "80c1960dc27c75ec623da164990be0c4b5b290e9c3f4a43da47886f52c8253ef"
+    },
+    {
+      "path": "code/revision_v143/requirements.txt",
+      "bytes": 193,
+      "sha256": "f2cb32d29918fc0ced13b55881502bcd7cc20dd2e65c8a6ac4ad4d9c09f366a2"
+    },
+    {
+      "path": "docs/candidate_code_changes.json",
+      "bytes": 7697,
+      "sha256": "1b47588b143eb05cfcb9f17944ceba978073ebd8bd634f3904ad90ea0ff54b7a"
+    },
+    {
+      "path": "docs/data_and_licensing.md",
+      "bytes": 1951,
+      "sha256": "9a56be58077260d2962215c2f97bbe7ce2edb8ae0a8bc2ec7e402a9ba1ab2e6b"
+    },
+    {
+      "path": "docs/nature_health_v137_reproducibility_note.md",
+      "bytes": 3449,
+      "sha256": "907c01f0a789f72075bdb561ce128b1fbc66d382b552c1f333e66edc9ad5aed9"
+    },
+    {
+      "path": "docs/output_map_v143.md",
+      "bytes": 4217,
+      "sha256": "4f82b190b6004acceb1dddc3571326b00dddb76bacce4d60c0b8f09b59bb729c"
+    },
+    {
+      "path": "docs/release_checklist.md",
+      "bytes": 1461,
+      "sha256": "c522e3cfb867499e8d5d04ac83c05e92cb074c7ab4d5970837fded383966ea4c"
+    },
+    {
+      "path": "docs/reproduction_v143.md",
+      "bytes": 7383,
+      "sha256": "ffa282ae4e56ca2d75bd9e18b82a26c30a8b259727cb5993e44923b7695016e1"
+    },
+    {
+      "path": "docs/revision_source_manifest.json",
+      "bytes": 5130,
+      "sha256": "dd1724ec21da0a0990cb5932356f554d572d5ef92aa005caa249b82a48503640"
+    },
+    {
+      "path": "docs/submission_audit_v137.md",
+      "bytes": 1904,
+      "sha256": "4fa5e2d0acb766c457eaa3f0e55cd7b6d42cfb41a386b07a68bb0768303403d3"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 82,
+      "sha256": "d6567b7b767a60a7495609a6bd212746907cf7a6941cca3a50b95ebd9233e62a"
+    },
+    {
+      "path": "results/nature_health_v137/README.md",
+      "bytes": 1320,
+      "sha256": "1bba0cd68286ee3d8d92d822e94cb27e3fed130ab9866ac97c4f7244819c70b2"
+    },
+    {
+      "path": "results/nature_health_v137/figures/2022_2024_delta_map_v137.png",
+      "bytes": 1679375,
+      "sha256": "24f31e513321fd60273946cacefb57adcb643cdacc6d2454b10c4189deea3c20"
+    },
+    {
+      "path": "results/nature_health_v137/figures/2022_vs_2024_diffusion_v137.png",
+      "bytes": 3908897,
+      "sha256": "ddc64ff049e5b98db22e9f7544b6682b4f65e0cc951b85bda19413b870f94b9b"
+    },
+    {
+      "path": "results/nature_health_v137/figures/appendix_ai_flag_mode_sensitivity_2024_v137.png",
+      "bytes": 188118,
+      "sha256": "32c5856539610572d62da94e705db4467fb86a7056631eed0bf22bf1325ecee1"
+    },
+    {
+      "path": "results/nature_health_v137/figures/manuscript_travel_distribution_ai_rucc.png",
+      "bytes": 308621,
+      "sha256": "1b96404926616a9db221a67282ea90f14f08e31650e3c0a795916ddb0a43f4cb"
+    },
+    {
+      "path": "results/nature_health_v137/tables/table1_longitudinal_summary_v137.csv",
+      "bytes": 506,
+      "sha256": "b9862226dec142596c49e46cfa39436338f8c22330b16bfb699838c935f41da6"
+    },
+    {
+      "path": "results/nature_health_v137/tables/table2_blockgroup_summary_v137.csv",
+      "bytes": 492,
+      "sha256": "99e0a2184eeb55c24792cc97c48fc515bb7929c592a7eee77abc1732677b9dde"
+    },
+    {
+      "path": "results/nature_health_v137/tables/table3_transition_equity_profile_v137.csv",
+      "bytes": 861,
+      "sha256": "4fc74eae181b9723bd9e064394667a8f0ff813a1bd1409314242defc61a27a69"
+    },
+    {
+      "path": "scripts/check_revision_code.py",
+      "bytes": 2501,
+      "sha256": "66e66e87051cac04ec8e58dd7f875c14da82779e25573fbc0d1f0f97b23f0fae"
+    },
+    {
+      "path": "scripts/check_revision_inputs.py",
+      "bytes": 2557,
+      "sha256": "c337e4e4b8ebc9d697450100920214fc149ac1fad71412a8771411fd8498dd65"
+    },
+    {
+      "path": "scripts/validate_release.py",
+      "bytes": 3056,
+      "sha256": "e1efc633def8a364f5a5bfc1b771e6214f4d18258d3a417864c876ec8b854d3b"
+    },
+    {
+      "path": "tests/test_access_helpers.py",
+      "bytes": 4266,
+      "sha256": "6a72107996a796f812fbcab157dd62567e383af42493785c67f03f66981c854f"
+    }
+  ]
+}
