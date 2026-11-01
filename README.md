@@ -50,7 +50,7 @@ The final figures and aggregate source summaries accompany the article and its s
 
 ## Citation and license
 
-Use the metadata in [CITATION.cff](CITATION.cff) to cite the software. Author-owned code and documentation are distributed under the [MIT license](LICENSE). The license does not cover survey data, third-party geography, or fonts.
+Use the metadata in [CITATION.cff](CITATION.cff) to cite the software. Version 1.0.0 has reserved Zenodo DOI [10.5281/zenodo.23870377](https://doi.org/10.5281/zenodo.23870377); the record is currently a draft. The uploaded archive matches the [consolidated software snapshot](https://github.com/undergroundbreakfast/coverage-without-convergence/tree/690dce8801dc0bc4be1d60d959e97ae4008a90f9). Author-owned code and documentation are distributed under the [MIT license](LICENSE). The license does not cover survey data, third-party geography, or fonts.
 
 Contact: Aaron Johnson, aj3248@drexel.edu.
 
