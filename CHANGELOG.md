@@ -1,25 +1,15 @@
-# Version history
+# Changelog
 
-## v143-code, September 20, 2026
+## 1.0.0 — 2026-11-01
 
-- Uses the current title and Communications Health revision context.
-- Adds revision analysis-stage scripts, tests and documentation. Corrected figures
-  and new aggregate summaries remain local pending redistribution-rights confirmation.
-- Documents missing extraction/provenance dependencies and release rights gates.
-- Fixes zero-weight behavior in the legacy quantile helper; defines the all-zero
-  Gini convention; rejects invalid numeric inputs; adds data-free tests.
-- Separates minimal helper requirements from the pinned revision environment.
-- Clarifies that the original validator checks schemas, not scientific results.
-- Removes manuscript-composition code and its unavailable internal dependency from
-  the distributable plotting module; plotting computations are retained.
+- Consolidated the analysis code and final supplementary tabulation and figure-formatting utilities into one software package.
+- Organized inputs and outputs separately from source code, with configurable paths and a single ordered runner.
+- Replaced the dynamic plotting wrapper with its equivalent standalone publication script.
+- Retained the study definitions, numerical calculations, model specifications, random seeds, and sample checks.
+- Added production-calculation tests, input validation, automated checks, and an explicit archive inventory.
+- Kept the earlier submission release and analysis tag unchanged. Historical figure assets are available in those versions; the current package contains software and documentation.
 
-No manuscript estimate is changed by the generic-helper fixes. Revision scripts
-use their original production calculations. Source/package hashes record changes.
-No new revision-derived data or images are published in this code-only update.
+## Earlier snapshots
 
-## v137-submission, June 2026
-
-Original public release, commit f82720314a3630304e121e097820d60497ccd675. Preserved
-without retagging. Contains the original title, figures, tables and method helpers,
-not the revision analyses or the full extraction pipeline. The archived map images
-have known legend/occlusion defects; use revision figures for the revised paper.
+- `v143-code`: analysis code snapshot dated 2026-09-20.
+- `v137-submission`: original submission archive.

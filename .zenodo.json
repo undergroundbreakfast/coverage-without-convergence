@@ -1,0 +1,15 @@
+{
+  "title": "Analysis code for More hospitals report artificial intelligence use but geographic divides persist",
+  "upload_type": "software",
+  "description": "Analysis software for population proximity to hospitals reporting artificial intelligence use in the 2022 and 2024 American Hospital Association surveys. Includes geographic coverage and inequality calculations, rurality and income comparisons, reporting diagnostics, missing-response scenarios, implementation-stage summaries, supplementary tabulations, and plotting utilities. Prepared study inputs are required; licensed hospital records are not included. The documentation identifies the input preparation and analyses outside this package.",
+  "creators": [
+    {"name": "Johnson, Aaron"},
+    {"name": "Gefen, David"},
+    {"name": "Harrison, Teresa D"}
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-11-01",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": ["artificial intelligence", "hospitals", "geographic access", "health services research", "reproducibility"]
+}

@@ -1,64 +1,17 @@
-.DS_Store
-
-# Python
+# Inputs, computed outputs, and local environments
+/data/
+/outputs/
+.venv/
+venv/
+.env
+.env.*
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.mypy_cache/
 .ruff_cache/
-.venv/
-venv/
-env/
-
-# Local credentials and environment
-.env
-.env.*
-*.pem
-*.key
-*.crt
-*.p12
-
-# Local databases and dumps
-*.db
-*.sqlite
-*.sqlite3
-*.dump
-*.sql
-*.bak
-
-# Licensed/raw data that must not be committed
-raw_data/
-data/raw/
-data/licensed/
-aha_survey_data/
-aha_fy2024/
-*AHA*
-*aha*
-*HealthForum*
+.DS_Store
+*.log
 *.parquet
-*.feather
-*.dta
-*.sav
-
-# Local geospatial caches and bulky generated working folders
-tile_cache/
-shapefiles/
-publication_outputs/
-genai_robotics_health_output/
-
-# Notebooks and OS/editor state
-.ipynb_checkpoints/
-.vscode/
-.idea/
-
-# Revision runtime inputs and outputs are never included by directory-wide copy.
-**/private/
-**/analysis/
-**/Source_Data/
-**/inputs/
-**/run_geo_multi_*/
-**/pr_inclusion_sensitivity_*/
-**/Revisions/*/figures/
 *.npz
 *.npy
 *.geojson
@@ -67,10 +20,10 @@ genai_robotics_health_output/
 *.shx
 *.dbf
 *.prj
+*.db
+*.sqlite*
+*.pem
+*.key
 *.docx
 *.eml
 *.msg
-*.log
-*.csv
-!results/nature_health_v137/tables/*.csv
-!results/revision_v143/tables/**/*.csv

@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "Cite the v143-code snapshot for revision analysis code; v137-submission is the original archive. New revision derived outputs are not included."
-title: "More hospitals report artificial intelligence use but geographic divides persist"
+message: "Please cite this software when using the analysis code."
+type: software
+title: "Analysis code for More hospitals report artificial intelligence use but geographic divides persist"
 authors:
   - family-names: Johnson
     given-names: Aaron
@@ -9,6 +10,6 @@ authors:
   - family-names: Harrison
     given-names: Teresa D
 repository-code: "https://github.com/undergroundbreakfast/coverage-without-convergence"
-version: "v143-code"
-date-released: "2026-09-20"
+version: "1.0.0"
+date-released: "2026-11-01"
 license: MIT

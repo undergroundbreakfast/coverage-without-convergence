@@ -1,91 +1,59 @@
 # More hospitals report artificial intelligence use but geographic divides persist
 
-Analysis code for the Communications Health revision, v143.
+Analysis software accompanying the study of population proximity to hospitals reporting artificial intelligence use in the 2022 and 2024 American Hospital Association surveys.
 
-**v143-code: revision scripts, tests and documentation.** New revision tables and
-finished figures are withheld pending redistribution-rights confirmation. The
-`v137-submission` release remains the historical original submission; its assets
-are retained unchanged. Neither this update nor the software license certifies
-rights to redistribute AHA-derived outputs.
+The software calculates geographic coverage, population-weighted inequality, rurality and income comparisons, reporting diagnostics, missing-response scenarios, and implementation-stage summaries. Proximity is an estimated geographic measure; it does not establish service availability, patient exposure, or clinical benefit.
 
-## Study scope
+## Getting started
 
-The study measures population proximity to hospitals reporting artificial
-intelligence use in the 2022 and 2024 American Hospital Association surveys.
-Geographic gaps persist while metropolitan-nonmetropolitan gaps narrow. Coverage
-growth depends on the expanded 2024 instrument; reported implementation depth and
-missing-status assumptions are examined separately. Premature mortality is
-pre-existing health-burden context, not evidence of an AI effect on mortality.
+Use Python 3.14 and the pinned scientific dependencies:
 
-Proximity is not verified service availability, clinical effectiveness, or patient
-exposure. Survey constructs are not fully equivalent across waves.
-
-## Start here
-
-- [Reproduction guide](docs/reproduction_v143.md): inputs, execution order and limits.
-- [Output guide](docs/output_map_v143.md): manuscript figures, tables and source summaries.
-- [Version history](CHANGELOG.md): original release versus this code update.
-- [Data and licensing boundaries](docs/data_and_licensing.md).
-- [Publication status](docs/release_checklist.md): scope and remaining rights gates.
-
-## What can be run without licensed inputs?
-
-The generic calculation tests and package-integrity checks require no AHA data:
-
-```bash
+```sh
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python scripts/validate_release.py
-python code/geospatial_access_workflow_v137.py
+python scripts/check_code.py
+python scripts/verify_release.py
 ```
 
-The last command checks archived file presence and CSV schemas only. It does not
-regenerate or numerically validate the paper. The legacy midpoint-quantile helper
-is not used in the revision's production quantiles.
+These checks run without the study data. They test production calculations, script imports, and file integrity.
 
-## Revision code
+To run the study analyses, arrange the prepared inputs as described in the [input specification](docs/inputs.md), then run:
 
-`code/revision_v143/` contains the actual analysis-stage scripts, including the
-reporting models, fixed-reporting panel, per-application analyses, income-aware
-spatial scenarios, and implementation-depth maps. A separate pinned environment
-and a no-data import check are documented in the reproduction guide.
+```sh
+python scripts/check_inputs.py
+python scripts/run_analysis.py --stage numerical
+python scripts/run_analysis.py --stage figures
+```
 
-These scripts require authorized frozen extracts and contextual inputs. They are
-not a turnkey extraction pipeline from independently obtained AHA files. The
-original release does not contain that extraction pipeline either. Source-data
-licensing alone does not provide the missing extraction work or map provenance.
+See the [reproduction guide](docs/reproduction.md) for configuration and the [output index](docs/outputs.md) for the figures and tables supported by each script.
 
-## Files and version boundaries
+## Repository contents
 
-- `results/nature_health_v137/`: archived original-submission assets.
-- New revision figures and aggregate summaries are not included in this code update.
-- `code/geospatial_access_workflow_v137.py`: legacy method helpers, with tested
-  input-validation fixes in this update; the original tag remains unchanged.
-- `code/revision_v143/`: revision analysis and plotting scripts.
-- `release_manifest.json`: explicit file inventory and checksums.
-- `CITATION.cff`: citation metadata for the code snapshot; no DOI is claimed.
+| Location | Contents |
+| --- | --- |
+| `code/` | Analysis, plotting, supplementary tabulation, and optional PDF-formatting scripts |
+| `scripts/` | Input checks, execution order, code checks, and archive packaging |
+| `tests/` | Tests of the production calculations using synthetic inputs |
+| `docs/` | Input specification, reproduction instructions, and output index |
+| `CITATION.cff`, `.zenodo.json` | Software citation and repository metadata |
+| `release_manifest.json` | File inventory and SHA-256 checksums |
 
-The revised Figure 2 is a rurality/income comparison, not the original Figure 2
-travel-time distribution. Use the output guide rather than assuming numbering is
-stable across versions. Corrected maps have been prepared locally but are not
-included in this code update. Historical image defects are documented rather than
-silently rewriting the tag.
+Local inputs belong in `data/` and generated files in `outputs/`; neither directory is distributed.
 
-## Data availability
+## Data and reproduction scope
 
-The authors do not distribute licensed AHA records covered by their agreement.
-Source-data access must be arranged with AHA. No raw hospital records, individual
-hospital predictions, fine-grained derived map-value files, credentials, reviewer
-responses, or correspondence are included here. New aggregate summaries and
-finished figures remain local pending redistribution/provenance review; absence
-of identifiers is not evidence of permission.
+The scripts begin with the study's prepared hospital extracts, population panel, and geographic inputs. Licensed hospital records are not included. Researchers must arrange access to the American Hospital Association survey data under the applicable terms; obtaining those files alone does not reconstruct the prepared study inputs. Raw-survey extraction, geocoding, and some earlier supplementary analyses are outside this package. The [input specification](docs/inputs.md) and [output index](docs/outputs.md) describe these boundaries.
 
-The MIT license covers author-owned software and documentation only. It does not
-grant rights to AHA data, third-party geography, or other third-party materials.
+The final figures and aggregate source summaries accompany the article and its supplementary material. This software archive contains code and documentation, rather than historical figure or table assets.
 
-## Existing public archive
+## Citation and license
 
-The [v137-submission release](https://github.com/undergroundbreakfast/coverage-without-convergence/releases/tag/v137-submission)
-is retained as historical. Do not cite it as containing the v143 analyses.
-Use the [v143-code snapshot](https://github.com/undergroundbreakfast/coverage-without-convergence/tree/v143-code)
-for this revision code, with the input and reproduction limits described above.
+Use the metadata in [CITATION.cff](CITATION.cff) to cite the software. Author-owned code and documentation are distributed under the [MIT license](LICENSE). The license does not cover survey data, third-party geography, or fonts.
+
+Contact: Aaron Johnson, aj3248@drexel.edu.
+
+## Earlier versions
+
+The [original submission release](https://github.com/undergroundbreakfast/coverage-without-convergence/releases/tag/v137-submission) and the [earlier analysis snapshot](https://github.com/undergroundbreakfast/coverage-without-convergence/tree/v143-code) remain available unchanged. Their figures and numbering belong to those versions. See [CHANGELOG.md](CHANGELOG.md) for the consolidated software version.
